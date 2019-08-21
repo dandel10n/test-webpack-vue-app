@@ -1,0 +1,23 @@
+{
+  "name": "test-webpack-vue-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "build-dev": "yarn clean && webpack -d --mode development",
+    "build": "yarn clean && webpack -p --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.6.10",
+    "vue-library-sample": "^0.0.2"
+  },
+  "devDependencies": {
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6"
+  }
+}
